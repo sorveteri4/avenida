@@ -1,2 +1,2 @@
 # Ice-Cream-Shop-Online-Menu
- A meni for an Ice cream shop
+ A menu for an Ice cream shop
