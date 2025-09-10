@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F8E9E1;
+  height: 100vh;
+}
+
+#home{
+  float: left;
+  width: 30px;
+  filter: brightness(0) saturate(100%) invert(0);
+  margin-bottom: 10px;
+}
+
+#FormaPagamento{
+  background-color: #fb9644;
+  color: white;
+  margin: 10px auto;
+  padding: 12px 16px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  width: 90%;
+  max-width: 250px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#carrinho,h1,h2,p{
+  text-align: center;
+  margin: 25px;
+}
+
+.pagina { display: none; padding: 20px; }
+.pagina.ativa { display: block; }
+.navegacao { margin-top: 20px; text-align: center; }
+button { padding: 12px 20px; margin: 5px; cursor: pointer; border: none; border-radius: 8px; font-size: 16px; }
+#btnContinuar { 
+  background: #bbb; 
+  color: #000; 
+  display: flex; align-items: center; gap: 8px; margin: auto;
+  margin-bottom: 10px;
+}
+#btnFinalizar, .btn-proximo { 
+  background: #4CAF50; 
+  color: #fff; 
+  display: flex; align-items: center; gap: 8px; margin: auto;
+  margin-top: 10px;
+}
+.btn-voltar { background: #bbb; color: #000; }
+#btnWhatsapp { background: #25D366; color: white; display: flex; align-items: center; gap: 8px; margin: auto; }
+#btnWhatsapp img { width: 20px; }
+
+
+#pagamento,#qrcode,#textCopyPix{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#dinheiroInfo,#pixInfo{
+  text-align: center;
+}
+
+/* Botão WhatsApp */
+#btnWhatsapp {
+background: #25D366;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      gap: 8px;
+      margin-top: 15px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+      line-height: 1;
+      vertical-align: middle;
+    }
+    #btnWhatsapp img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+    }
+    select, input {
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-top: 8px;
+    }
+

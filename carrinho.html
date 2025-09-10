@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrinho</title>
+  <link rel="icon" type="image/x-icon" href="./assets/emoji-de-sorvete.png">
+  <link rel="stylesheet" href="carrinho.css" />
+</head>
+<body>
+  <a href="./menu.html">
+    <img src="./assets/arrow_back.svg" alt="Início" id="home" />
+  </a>
+
+  <h1>🛒 Carrinho</h1>
+
+  <!-- Página 1: Itens do Carrinho -->
+  <section class="pagina ativa" id="pagina1">
+    <div id="carrinho"></div>
+    <div id="FinalizarOuNao">
+      <button id="btnContinuar" onclick="window.location.href='./menu.html'">Adicionar mais</button>
+      <button id="btnFinalizar" onclick="proximaPagina()">Finalizar Pedido</button>
+    </div>
+  </section>
+
+  <!-- Página 2: Pagamento -->
+  <section class="pagina" id="pagina2">
+    <div id="carrinho2"></div>
+
+    <h2 id="FormaPagamento">Forma de Pagamento</h2>
+    <select id="pagamento" onchange="mostrarOpcaoPagamento()">
+      <option value="">Selecione...</option>
+      <option value="pix">Pix</option>
+      <option value="dinheiro">Dinheiro</option>
+    </select>
+
+    <div id="pixInfo" style="display:none; margin-top:10px;">
+      <p>Escaneie o QR Code ou copie a chave Pix:</p>
+      <img src="./assets/pixQRcode.jpg" id="qrcode" alt="QR Code Pix" width="150">
+      <br><br>
+      <button id="textCopyPix" onclick="copiarPix()">📋 Copiar Chave Pix</button>
+    </div>  
+
+    <div id="dinheiroInfo" style="display:none; margin-top:10px;">
+      <label>Vai precisar de troco?</label>
+      <br>
+      <input style="text-align: center;" type="number" id="troco" placeholder="Troco para quanto?">
+    </div>
+
+    <div class="navegacao">
+      <button class="btn-voltar" onclick="paginaAnterior()">Voltar</button>
+      <button id="btnWhatsapp" onclick="enviarWhatsapp()">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        Enviar no WhatsApp
+      </button>
+    </div>
+  </section>
+
+  <script src="carrinho.js"></script>
+</body>
+</html>
