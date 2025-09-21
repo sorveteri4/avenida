@@ -151,7 +151,7 @@ function mostrarOpcaoPagamento() {
 }
 
 function copiarPix() {
-  const chavePix = "45.371.060/0001-59";
+  const chavePix = "f5f6e67f-fade-4df6-a7e6-d49175c5f6ed";
   navigator.clipboard.writeText(chavePix);
   alert("Chave Pix copiada!");
 }
